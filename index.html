@@ -4,44 +4,114 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Anastasiia Demenkova | QA Engineer Portfolio</title>
-  <meta name="description" content="QA Engineer focused on AI chatbot and LLM testing. Manual and automation for API, UI, cross-platform, and mobile." />
+  <meta name="description" content="QA Engineer portfolio with AI chatbot and LLM testing. Manual and automation for API, UI, mobile, and cross platform apps." />
   <style>
     :root{--bg:#0b0c10;--text:#e5e7eb;--muted:#9aa3af;--card:#121318;--line:#1e2330;--pill:#1f2937;--btn:#171923}
     *{box-sizing:border-box}
     body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,"Noto Sans",sans-serif}
     .wrap{max-width:980px;margin:0 auto;padding:24px}
     .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin:14px 0}
-    h1{margin:6px 0 2px;font-size:32px} h2{margin:0 0 10px;font-size:20px}
+    h1{margin:6px 0 2px;font-size:32px}
+    h2{margin:0 0 10px;font-size:20px}
     p{margin:8px 0;color:var(--muted);line-height:1.7}
-    ul{margin:0;padding-left:18px} li{margin:6px 0}
+    ul{margin:0;padding-left:18px}
+    li{margin:6px 0}
     .tag{display:inline-block;margin:0 6px 6px 0;padding:6px 10px;border-radius:999px;background:var(--pill);border:1px solid #263043;color:#cbd5e1;font-size:12px}
     .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
     .btn{display:inline-flex;gap:8px;align-items:center;padding:10px 14px;border-radius:12px;border:1px solid #2a2f3a;background:var(--btn);color:#fff;text-decoration:none}
-    footer{color:#7b8493;text-align:center;margin:24px 0}
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+    nav{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0 0}
+    nav a{color:#cbd5e1;text-decoration:none;border:1px solid #2a2f3a;padding:8px 12px;border-radius:10px;background:#171923}
+    footer{color:#7b8493;text-align:center;margin:24px 0}
   </style>
 </head>
 <body>
   <div class="wrap">
     <!-- Header -->
-    <header class="card">
-      <span class="tag">Open to: QA Engineer | SDET</span>
+    <header class="card" id="top">
+      <span class="tag">Open to: QA Engineer | QA Lead | SDET</span>
       <h1>Anastasiia Demenkova</h1>
-      <p>QA Engineer | AI Chatbot & LLM Testing | Manual & Automation QA | API, UI, Cross-Platform, Mobile</p>
-      <p>Santa Clara, CA - Open to San Francisco Bay Area (on-site/hybrid) and remote U.S.</p>
+      <p>QA Engineer | AI Chatbot and LLM Testing | Manual and Automation QA | API, UI, Cross Platform, Mobile</p>
+      <p>Santa Clara, CA - Open to San Francisco Bay Area on site or hybrid and remote U.S.</p>
       <div class="btns">
         <a class="btn" href="mailto:anastasiia.demenkova@gmail.com" rel="noopener">Email</a>
         <a class="btn" href="https://www.linkedin.com/in/anastasiia-demenkova-036a9b120/" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn" href="https://github.com/AnastasiiaDemenkova" target="_blank" rel="noopener">GitHub</a>
       </div>
+      <nav aria-label="Quick nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#project">Chatbot Project</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
 
+    <!-- About -->
+    <section class="card" id="about">
+      <h2>About</h2>
+      <p>I test and lead QA for web, mobile, and AI-based systems. I create clear test plans, improve release reliability, and build automation that reduces manual load. I’ve led release readiness, defect triage, and AI chatbot validation projects, ensuring precision and consistency across teams.</p>
+    </section>
+
     <!-- Skills -->
-    <section class="card">
+    <section class="card" id="skills">
       <h2>Core Skills</h2>
       <div class="grid">
         <ul>
           <li><b>Testing:</b> manual, functional, regression, GUI, UAT, backend, compatibility, accessibility</li>
           <li><b>Automation:</b> Python, Selenium, Playwright, Pytest</li>
-          <li><b>API:</b> Postman, REST, contract/schema checks, negative tests</li>
-          <li><b>Debug:</b> Charles Proxy, logs,
+          <li><b>API:</b> Postman, REST, contract and schema checks, negative tests</li>
+          <li><b>Debug:</b> Charles Proxy, logs, HAR, video, precise repro steps</li>
+        </ul>
+        <ul>
+          <li><b>Data and Observability:</b> SQL, Snowflake, Grafana dashboards</li>
+          <li><b>AI and LLM QA:</b> prompt consistency, hallucination traps, safety guardrails</li>
+          <li><b>CI and Tools:</b> GitHub Actions, Jenkins, Jira, TestRail</li>
+          <li><b>Platforms:</b> iOS, Android, macOS, Windows</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Experience summary -->
+    <section class="card" id="experience">
+      <h2>Experience Highlights</h2>
+      <ul>
+        <li>Led QA efforts for cross-platform releases at startups and large tech environments (Google, Amazon, Fetch Rewards).</li>
+        <li>Owned test plans, strategies, and regression cycles with strong focus on analytics, data validation, and automation.</li>
+        <li>Coordinated release readiness, defect triage, and fix verification using clear documentation and logs.</li>
+        <li>Developed automation for chatbot AI testing, reducing regression time and improving model validation accuracy.</li>
+      </ul>
+      <p>
+        <span class="tag">Regression time down ~40%</span>
+        <span class="tag">Flaky tests down ~35%</span>
+      </p>
+    </section>
+
+    <!-- Chatbot project -->
+    <section class="card" id="project">
+      <h2>Featured Project - OpenRouter LLM Chatbot QA</h2>
+      <p>Flask-based chatbot using OpenRouter (Mistral 7B). I implemented API and UI automation, LLM evaluation for safety and relevance, and created a regression checklist. Includes detailed QA documentation and test plan.</p>
+      <ul>
+        <li><b>API tests:</b> authentication, rate limits, schema and contract validation</li>
+        <li><b>UI tests:</b> Playwright flows, load/error handling, basic accessibility</li>
+        <li><b>AI eval:</b> hallucination checks, prompt consistency, safe fallback handling</li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="files/Chatbot_QA_TestPlan.pdf" target="_blank" rel="noopener">QA Test Plan PDF</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="card" id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:anastasiia.demenkova@gmail.com">anastasiia.demenkova@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/anastasiia-demenkova-036a9b120/" target="_blank" rel="noopener">anastasiia demenkova</a></p>
+      <p>GitHub: <a href="https://github.com/AnastasiiaDemenkova" target="_blank" rel="noopener">AnastasiiaDemenkova</a></p>
+      <p><a class="btn" href="#top">Back to top</a></p>
+    </section>
+
+    <footer>© <span id="y"></span> Anastasiia Demenkova - QA Portfolio</footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
